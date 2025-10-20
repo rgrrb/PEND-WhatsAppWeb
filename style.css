@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+
+}
+body{
+    height: 100dvh;
+    width: 100dvw;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 90px;
+    background-color: #f3f3f3;
+    border-right: solid rgba(0, 0, 0, 0.152) 1px;
+}
+.top-content{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.bottom-content{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.bottom-content .line{
+    height: 1px;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.387);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.top-content img{
+    height: 30px;
+    width: 30px;
+}
+.bottom-content img{
+    height: 30px;
+    width: 30px;
+}
+.bottom-content img:nth-child(5){
+    border-radius: 45px;
+}
+.chats-container{
+    height: 100%;
+    width: 45%;
+    background-color: #ffffff;
+    padding-top: 15px;
+    padding-left: 28px;
+    
+}
+.chats-header h1{
+    color: #1daa61;
+    font-weight: 500;
+    font-size: 22px;
+}
+.chats-header .input-search{
+    margin-left: 5px;
+    margin-top: 15px;
+    padding-left: 14px;
+    display: flex;
+    border-radius: 45px;
+    gap: 10px;
+    background-color: #0000000c;
+    width: 90%;
+    height: 45px;
+    align-items: center;
+    border: 2px solid #1daa6100;
+    transition: 0.15s ease-in-out;
+}
+.input-search:has(input:focus){
+    border: 2px solid #1DAA61;
+    
+}
+.input-search input{
+    border: none;
+    background-color: #00000000;
+    height: 100%;
+    width: 100%;
+    padding-left: 5px;  
+    gap: 10px;
+    font-size: 14px;
+    outline: 0;
+    border: none;
+    
+}
+.contact-content{
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+}
+.contact-header{
+    height: 80px;
+    width: 100%;
+    background-color: #f3f3f3;
+}
+.contacts-chat{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    padding-left: 5px;
+}
+
+.contact{
+    height: 100px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.info{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding-left: 10px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact img{
+    height: 50px;
+    border-radius: 50px;
+}
+.info .contact-info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.container-messages{
+    background-image: url(./src/img/background.png);
+    height: 83%;
+}
+.sending-message-area{
+    height: 10px;
+    width: 100%;
+    background-color: black;
+}
